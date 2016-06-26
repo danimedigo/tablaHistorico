@@ -1,0 +1,41 @@
+  
+	<div class="tit">	Tabla Historico Solicitudes IT / Calificación</div>
+    <div class="cont table-responsive">
+        <table class="table table-hover table-striped">
+            <thead>
+                <tr>
+                    <th>Número de solicitud</th>
+                    <th>Tipo solicitud</th>
+                    <th>Fecha Creación</th>
+                    <th>Estado Solicitud</th>
+                    <th>Fecha Actualización</th>
+                    <th>Fecha Recepción HC</th>
+                    <th>ver Detalle</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr ng-repeat="solicitud in vm.listaSolicitudes">
+                    <td>{{solicitud.id}}</td>
+                    <td>{{solicitud.tipoSolicitud}}</td>
+                    <td>{{solicitud.fechaCreacion }}</td>
+                    <td>Finalizado</td>
+                    <td>{{solicitud.fechaActualizacion }}</td>
+                    <td>{{solicitud.fechaRecepcionHC }}</td>			
+                    <td><a class="btn btn-secondary" href"" ng-click="vm.openModal(solicitud.id)">Ver Detalle</a></td>
+                    
+                </tr>
+                <tr ng-show="vm.listaSolicitudes.length === 0">
+					<td class="text-center" colspan="8"> No hay registros para mostrar.</td>
+				</tr>
+            </tbody>
+        </table>  
+        <div class="text-right" ng-show="vm.listaSolicitudes.length !== 0">
+            <uib-pagination boundary-links="true" class="pagination-sm" ng-change="pageChanged()"
+                    total-items="vm.totalItems" ng-model="vm.currentPage" items-per-page="vm.itemsPerPage"
+                    previous-text="&lsaquo;" next-text="&rsaquo;" first-text="&laquo;" last-text="&raquo;">
+                </uib-pagination>
+		</div>      
+    </div>
+
+
+

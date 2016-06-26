@@ -1,0 +1,374 @@
+
+    <!-- Tabla Datos de afiliado -->		
+		
+        <div class="tit col-md-12"> Datos afiliado</div>
+		<div>
+			
+			<div >
+				<div class="col-md-12 row">
+					<div class="col-md-2">Tipo de Identificación</div>
+					<div class="col-md-4">{{ detalleSolicitudSit.detalleSolicitud[0].afiliadoTipoIdentificacion}}</div>
+					<div class="col-md-2">Identificación</div>
+					<div class="col-md-4">{{ detalleSolicitudSit.detalleSolicitud[0].afiliadoId}}</div>
+				</div>
+				<div class="col-md-12 row">
+					<div class="col-md-2">Primer Nombre</div>
+					<div class="col-md-4">{{ detalleSolicitudSit.detalleSolicitud[0].afiliadoPrimerNombre}}</div>
+					<div class="col-md-2">Segundo Nombre</div>
+					<div class="col-md-4">{{ detalleSolicitudSit.detalleSolicitud[0].afiliadoSegundoNombre}}</div>
+				</div>
+				<div class="col-md-12 row">
+					<div class="col-md-2">Primer Apellido</div>
+					<div class="col-md-4">{{ detalleSolicitudSit.detalleSolicitud[0].afiliadoPrimerApellido}}</div>
+					<div class="col-md-2">Segundo Apellido</div>
+					<div class="col-md-4">{{ detalleSolicitudSit.detalleSolicitud[0].afiliadoSegundoApellido}}</div>
+				</div>
+				<div class="col-md-12 row">
+					<div class="col-md-2">Fecha de Nacimiento</div>
+					<div class="col-md-4">{{ detalleSolicitudSit.detalleSolicitud[0].afiliadoFechaNacimiento}}</div>
+					<div class="col-md-2">Sexo</div>
+					<div class="col-md-4">{{ detalleSolicitudSit.detalleSolicitud[0].sexo}}</div>
+				</div>
+				<div class="col-md-12 row">
+					<div class="col-md-2">Estado Civil</div>
+					<div class="col-md-4">{{ detalleSolicitudSit.detalleSolicitud[0].afiliadoEstadoCivil}}</div>
+					<div class="col-md-2">Tipo de Afiliación</div>
+					<div class="col-md-4">{{ detalleSolicitudSit.detalleSolicitud[0].tipoAfiliacion}}</div>				
+				</div>
+				<div class="col-md-12 row">
+					<div class="col-md-2">Tipo de Afiliado</div>
+					<div class="col-md-4">{{ detalleSolicitudSit.detalleSolicitud[0].afiliadoTipo}}</div>
+					<div class="col-md-2"></div>
+					<div class="col-md-4"></div>				
+				</div>		
+				
+			</div><!-- fin formulario afiliado-->
+			
+			<div >
+				<div class="col-md-12 row">
+					<div class="col-md-2">ID BYP</div>
+					<div class="col-md-4">{{ detalleSolicitudSit.detalleSolicitud[0].idByP}}</div>
+					<div class="col-md-2">Regional</div>
+					<div class="col-md-4">{{ detalleSolicitudSit.detalleSolicitud[0].regionalNombre}}	</div>					
+				</div>
+				<div class="col-md-12 row">
+					<div class="col-md-2">ID BPM</div>
+					<div class="col-md-4">{{ detalleSolicitudSit.detalleSolicitud[0].idSolicitud}}	</div>
+					<div class="col-md-2">Departamento</div>
+					<div class="col-md-4">{{ detalleSolicitudSit.detalleSolicitud[0].departamentoNombre}}	</div>					
+				</div>
+				<div class="col-md-12 row">
+					<div class="col-md-2">ID IPS</div>
+					<div class="col-md-4">{{ detalleSolicitudSit.detalleSolicitud[0].idIps}}	</div>
+					<div class="col-md-2">Ciudad</div>
+					<div class="col-md-4">{{ detalleSolicitudSit.detalleSolicitud[0].ciudad}}	</div>					
+				</div>
+				<div class="col-md-12 row">
+					<div class="col-md-2"></div>
+					<div class="col-md-4">	</div>
+					<div class="col-md-2">Oficina</div>
+					<div class="col-md-4">{{ detalleSolicitudSit.detalleSolicitud[0].oficina}}	</div>					
+				</div>
+				<div class="col-md-12 row">
+					<div class="col-md-2">Fecha de Solicitud</div>
+					<div class="col-md-4">{{ detalleSolicitudSit.detalleSolicitud[0].fechaCreacion}}	</div>
+					<div class="col-md-2">	</div>
+					<div class="col-md-4">	</div>					
+				</div>
+			</div>	
+		
+		</div>
+		<!-- Fin tabla datos afiliado -->
+		
+		<!-- Dictamen IPS -->
+		
+        <div class="tit col-md-12"> Dictamen Unidad de Calificación </div>
+		<div >
+			<div class="col-md-12 row">
+				<div class="col-md-2">Fecha Notificación</div>
+				<div class="col-md-4">{{ detalleSolicitudSit.detalleDictamen[0].fechaNotificacion | date : 'dd/MM/yyyy' }}</div>
+				<div class="col-md-2">Origen Invalidez</div>
+				<div class="col-md-4">{{ detalleSolicitudSit.detalleDictamen[0].origenInvalidez}}</div>
+			</div>
+			<div class="col-md-12 row">
+				<div class="col-md-2">Fecha Dictamen </div>
+				<div class="col-md-4">{{ detalleSolicitudSit.detalleDictamen[0].fechaDictamen | date : 'dd/MM/yyyy'}} </div>
+				<div class="col-md-2">Porcentaje PLC </div>
+				<div class="col-md-4">{{ detalleSolicitudSit.detalleDictamen[0].porcentajePlc | number:2 }} </div>
+			</div>
+			<div class="col-md-12 row">
+				<div class="col-md-2">Fecha Estructuración</div>
+				<div class="col-md-4">{{ detalleSolicitudSit.detalleDictamen[0].fechaEstructuracion | date : 'dd/MM/yyyy'}}</div>
+				<div class="col-md-2">Deficiencia</div>
+				<div class="col-md-4">{{ detalleSolicitudSit.detalleDictamen[0].porcentajeDeficiencia | number:2}} </div>
+			</div>				
+		</div>		
+        <div class="col-md-12 tit"> Calificación por MUCI   </div>
+		<div >
+			<div class="col-md-12 row">
+				<div class="col-md-2">Minusvalía</div>
+				<div class="col-md-4">{{ detalleSolicitudSit.detalleDictamen[0].porcentajeMinusvalia}} </div>
+				<div class="col-md-2">Discapacidad</div>
+				<div class="col-md-4">{{ detalleSolicitudSit.detalleDictamen[0].porcentajeIncapacidad}} </div>
+				
+			</div>
+		</div>
+		
+        <div class="tit col-md-12"> Calificación por MUCILO </div>
+		<div ><!-- Inicio formulario mucilo-->
+			<div class="col-md-12 row">
+				<div class="col-md-2">Valoración Total Rol</div>
+				<div class="col-md-4">{{ detalleSolicitudSit.detalleDictamen[0].valoracionTotalRol | number:2}}</div>
+				<div class="col-md-2">Comunicación AFP</div>
+				<div class="col-md-4">{{ detalleSolicitudSit.detalleDictamen[0].comunicacionAfp}} </div>				
+			</div>
+			<div class="col-md-12 row">
+				<div class="col-md-2">Rol Laboral AFP</div>
+				<div class="col-md-4">{{ detalleSolicitudSit.detalleDictamen[0].rolLaboralAfp}}</div>
+				<div class="col-md-2">Movilidad AFP</div>
+				<div class="col-md-4">{{ detalleSolicitudSit.detalleDictamen[0].movilidadAfp | number:2}} </div>				
+			</div>
+			<div class="col-md-12 row">
+				<div class="col-md-2">Económica AFP</div>
+				<div class="col-md-4">{{ detalleSolicitudSit.detalleDictamen[0].economicaAfp}}</div>
+				<div class="col-md-2">Cuidado Personal AFP</div>
+				<div class="col-md-4">{{ detalleSolicitudSit.detalleDictamen[0].cuidadoPersonalAfp | number:2}} </div>				
+			</div>
+			<div class="col-md-12 row">
+				<div class="col-md-2">Edad AFP</div>
+				<div class="col-md-4">{{ detalleSolicitudSit.detalleDictamen[0].edadAfp | number}}</div>
+				<div class="col-md-2">Vida Doméstica AFP</div>
+				<div class="col-md-4">{{ detalleSolicitudSit.detalleDictamen[0].vidaDomesticaAfp | number:2}} </div>				
+			</div>
+			<div class="col-md-12 row">
+				<div class="col-md-2">Aprendizaje AFP</div>
+				<div class="col-md-4">{{ detalleSolicitudSit.detalleDictamen[0].aprendizajeAfp}}</div>
+				<div class="col-md-2"></div>
+				<div class="col-md-4"></div>				
+			</div>
+		</div><!-- Fin formulario mucilo-->
+        <div class="tit col-md-12"> Médico Encargado </div>
+		<div ><!-- Formulario médico encargado-->	         
+			<div class="col-md-12 row">
+				<div class="col-md-2">Nombre</div>
+				<div class="col-md-4">{{ detalleSolicitudSit.detalleDictamen[0].medicoNombre}}</div>
+				<div class="col-md-2">Identificación</div>
+				<div class="col-md-4">{{ detalleSolicitudSit.detalleDictamen[0].medicoIdentificacion}}</div>				
+			</div>
+		</div><!-- Fin medico-->
+        <div class="col-md-12 tit"> Patologías  </div>
+		<div ><!-- Patologia-->	        
+			<div class="col-md-12 row">
+				<div class="col-md-4">Descripción</div>
+				<div class="col-md-8">{{ detalleSolicitudSit.detalleDictamen[0].patologia}}</div>
+								
+			</div>
+		</div><!--Fin patologia -->
+        
+		<div class="tit col-md-12"> Información Bancaria del Afiliado </div>
+		<div ><!--Info Bancaria -->	         
+			<div class="col-md-12 row">
+				<div class="col-md-2">Pagado A:</div>
+				<div class="col-md-4">{{ detalleSolicitudSit.detalleInfoBancaria[0].pagadoA}}</div>
+				<div class="col-md-2">Banco</div>
+				<div class="col-md-4">{{ detalleSolicitudSit.detalleInfoBancaria[0].banco}}</div>				
+			</div>
+			<div class="col-md-12 row">
+				<div class="col-md-2">ID:</div>
+				<div class="col-md-4">{{ detalleSolicitudSit.detalleInfoBancaria[0].idInfoCuenta}}</div>
+				<div class="col-md-2">Cuenta</div>
+				<div class="col-md-4">{{ detalleSolicitudSit.detalleInfoBancaria[0].cuenta}}</div>				
+			</div>
+			<div class="col-md-12 row">
+				<div class="col-md-2">Estado</div>
+				<div class="col-md-4">{{ detalleSolicitudSit.detalleInfoBancaria[0].estado}}</div>
+				<div class="col-md-2">Tipo Cuenta</div>
+				<div class="col-md-4">{{ detalleSolicitudSit.detalleInfoBancaria[0].tipoCuenta}}</div>				
+			</div>
+			<div class="col-md-12 row">
+				<div class="col-md-4">Comentario</div>
+				<div class="col-md-8">{{ detalleSolicitudSit.detalleInfoBancaria[0].comentario}}</div>
+								
+			</div>			
+		</div><!--fin info Banco -->
+		
+        <div class="tit col-md-12"> Sustentación de Prorroga </div>
+		<div ><!-- Inicio PRORROGA E INCAPACIDADES-->	            
+			<div class="col-md-12"><!-- Prorroga-->
+				<div class="col-md-4">Fecha de Día 181 </div>
+				<div class="col-md-8">{{ detalleSolicitudSit.detalleProrroga[0].fechaDia181}} </div>
+				<div class="col-md-4">Fecha de Día 360 o de finalización de Pagos </div>
+				<div class="col-md-8">{{ detalleSolicitudSit.detalleProrroga[0].fechaDia360}} </div>	
+				<div class="col-md-4">Fecha Inicio Tutela Abierta </div>
+				<div class="col-md-8">{{ detalleSolicitudSit.detalleProrroga[0].fechaInicioAbierta}} </div>			
+			</div><!-- Prorroga-->	
+         </div>		
+            <div class="tit col-md-12"> Histórico Relación Incapacidades</div>
+           
+          <div class="cont table-responsive"><!-- incapacidades-->
+			
+				<table class="table table-hover table-striped">
+					<thead>
+						<tr>
+							<th>Fecha Inicio</th>
+							<th>Fecha Fin</th>
+							<th>Días</th>							
+						</tr>
+					</thead>
+					<tbody>
+						<tr ng-repeat="incapacidad in  detalleSolicitudSit.detalleIncapacidad">
+							<td>{{incapacidad.fechaInicio}}</td>
+							<td>{{incapacidad.fechaFin}}</td>
+							<td>{{incapacidad.dias}}</td>
+						</tr>
+					</tbody>
+				</table>
+				<div class="text-right" ng-show="vm.detalleSolicitudSit.detalleIncapacidad.length !== 0">
+					<uib-pagination boundary-links="true" class="pagination-sm" ng-change="pageChangedIncapacidad()"
+						total-items="totalItemsIncapacidad" ng-model="currentPageIncapacidad" items-per-page="itemsPerPageIncapacidad"
+						previous-text="&lsaquo;" next-text="&rsaquo;" first-text="&laquo;" last-text="&raquo;">
+					</uib-pagination>
+				</div>
+		</div><!-- Fin prorroga e incapacidades--> 
+		
+        <div class="tit col-md-12"> Pagos Realizados por Aseguradora</div>
+		<div ><!-- inicio pago aseguradora-->	           
+            <div class="cont table-responsive">
+                <table class="table table-hover table-striped">
+                    <thead>
+                        <tr>
+                            <th>Fecha</th>
+                            <th>Monto</th>
+                            <th>Estado</th>
+                        </tr>
+                    
+                    </thead>
+                    <tbody>
+                        <tr ng-repeat="pagoAseguradora in  detalleSolicitudSit.detallePagoAseguradora">
+                            <td>{{pagoAseguradora.fecha}}</td>
+                            <td>{{pagoAseguradora.monto | currency}}</td>
+                            <td>{{pagoAseguradora.estado}}</td>
+                        </tr>
+                        
+                    </tbody>
+                </table>                
+            </div>
+			
+		</div><!--Fin pago aseguradora -->
+		
+        <div class="tit col-md-12"> Pagos de Incapacidades</div>
+		<div ><!-- Inico Pagos Nomina-->    
+         <div class="cont table-responsive">
+             <table class="table table-hover table-striped">
+                    <thead>
+                        <tr>
+                            <th>Pagado A</th>
+                            <th>NIT</th>
+                            <th>Banco</th>
+                            <th>Cuenta</th>
+                            <th>Tipo Cuenta</th>
+                            <th>Valor Pago</th>
+                            <th>Año</th>
+                            <th>Mes</th>
+                            <th>Días Pagados</th>
+                            <th>Fecha Pago</th>
+                            <th>Marcación</th>
+                            <th>Estado</th>
+                            <th>Fecha última Actualización</th>
+                            
+                        </tr>			
+                    </thead>
+                    <tbody>
+                        <tr ng-repeat="pagoNomina in  detalleSolicitudSit.detallePagoNomina">
+                            <td>{{pagoNomina.pagadoA}}</td>
+                            <td>{{pagoNomina.nit}}</td>
+                            <td>{{pagoNomina.banco}}</td>
+                            <td>{{pagoNomina.cuenta}}</td>
+                            <td>{{pagoNomina.tipoCuenta}}</td>
+                            <td>{{pagoNomina.valorPago | currency}}</td>
+                            <td>{{pagoNomina.anio}}</td>
+                            <td>{{pagoNomina.mes}}</td>
+                            <td>{{pagoNomina.dias}}</td>
+                            <td>{{pagoNomina.fechaPago}}</td>
+                            <td>{{pagoNomina.marcacion}}</td>
+                            <td>{{pagoNomina.estado}}</td>
+                            <td>{{pagoNomina.fechaRealizacionPago}}</td>					
+                        </tr>                        
+                    </tbody>
+                </table>
+				<div class="text-right" ng-show="vm.detalleSolicitudSit.detallePagoNomina.length !== 0">
+					<uib-pagination boundary-links="true" class="pagination-sm" ng-change="pageChangedPagoNomina()"
+						total-items="totalItemsPagoNomina" ng-model="currentPagePagoNomina" items-per-page="itemsPerPagePagoNomina"
+						previous-text="&lsaquo;" next-text="&rsaquo;" first-text="&laquo;" last-text="&raquo;">
+					</uib-pagination>			
+					
+				</div>	
+             
+         </div>
+		
+			
+		</div><!-- Fin pagos nomina-->
+		
+		<div><!--Evaluaciones Funcionales -->		
+        <div class="tit col-md-12"> Cita Evaluación Funcional</div>
+        <div class="cont table-responsive">
+            <table class="table table-hover table-striped">
+				<thead>
+						<th>Fecha de Evaluación</th>
+						<th>Hora</th>
+						<th>Lugar</th>
+						<th>Comentarios IPS</th>
+						<th>Estado</th>
+						<th>Comentarios Protección</th>
+				
+				</thead>
+				<tbody>
+					<tr ng-repeat="evaluacion in  detalleSolicitudSit.detalleEvaluacion">
+						<td>{{evaluacion.fecha}}</td>
+						<td>{{evaluacion.hora}}</td>
+						<td>{{evaluacion.lugar}}</td>
+						<td>{{evaluacion.comentarios}}</td>
+						<td>{{evaluacion.estado}}</td>
+						<td>{{evaluacion.comentarioProteccion}}</td>
+					</tr>
+					
+				</tbody>
+			</table>            
+        </div>
+			
+			
+		</div><!-- Fin evaluaciones Funcionales-->
+		
+		<div><!-- Aportes de Documentación-->			
+            <div class="tit col-md-12"> Aportes de Documentación</div>	
+            <div class="cont table-responsive">
+                <table class="table table-hover table-striped">
+                    <thead>
+                        <tr>
+                            <th>Pendiente</th>
+                            <th>Fecha Solicitud por IPS</th>
+                            <th>Fecha Recepción en Oficina</th>
+                            <th>Fecha envío a IPS</th>
+                            <th>Comentarios Protección</th>
+                        </tr>				
+                    </thead>
+                    <tbody>
+                        <tr ng-repeat="pendiente in  detalleSolicitudSit.detallePendiente">
+                            <td>{{pendiente.pendiente}}</td>
+                            <td>{{pendiente.fechaSolicitud}}</td>
+                            <td>{{pendiente.fechaRecepcionOficina}}</td>
+                            <td>{{pendiente.fechaEnvio}}</td>
+                            <td>{{pendiente.comentarioProteccion}}</td>
+                        </tr>
+                        
+                    </tbody>
+                    
+                </table>
+            </div>
+			
+		</div><!-- Fin aportes de documentación-->   
+
+
+
+    
+		
