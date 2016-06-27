@@ -27,17 +27,21 @@ Teniendo en cuenta la estructura de la App como se encuentra en el repositorio "
 * En el archivo "caso.module":
     * Importar la directiva "TablaSolicitudesCalificacionDirective":
     
-        `import { TablaSolicitudesCalificacionDirective } from './components/tabla_solicitudes_calificacion/tablaSolicitudesCalificacion.directive';`  
+        ```
+        import { TablaSolicitudesCalificacionDirective } from './components/tabla_solicitudes_calificacion/tablaSolicitudesCalificacion.directive';
+        ```  
         
     * Importar el servicio "SitHistoricoCalificacionService":
     
-        `import { SitHistoricoCalificacionService }  from  './services/sitHistoricoCalificacion.service';`
-        
+        ```
+        import { SitHistoricoCalificacionService }  from  './services/sitHistoricoCalificacion.service';
+        ```
     * Agregar el servicio y la directiva:
     
-         `.service('sitHistoricoCalificacionService',SitHistoricoCalificacionService)`
-         `.directive('tablaSolicitudesCalificacion',TablaSolicitudesCalificacionDirective)`
-    
+         ```
+         .service('sitHistoricoCalificacionService',SitHistoricoCalificacionService)
+         .directive('tablaSolicitudesCalificacion',TablaSolicitudesCalificacionDirective)
+         ```
 ## Configuración Microservicio sitHistorico
 * El servicio cuenta con la siguiente configuración de persistencia en la clase "DefaultDBI".
     * Nombre JNDI= `jdbc/oracleSitHistorico`, el dataSource debe ser configurado en el archivo "server.xml" del servidor wlp. 
