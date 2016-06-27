@@ -1,14 +1,14 @@
 # Tabla histórico calificación
 Tabla donde se visualizan las SIT del histórico IT/Calificación. Esta debe ser incluida dentro del módulo casos de la App.
-A contnuación se especifica la configuración contemplada para su inclución dentro del módulo.
+A contnuación se especifica la configuración contemplada para su inclución dentro del módulo caso.
 
 ## Tabla de contenido
 * [Configuración en frontend, módulo caso](#frontend, módulo caso)
-* [Configuración servicio](#servicio)
+* [Configuración Microservicio](#Configuración Microservicio sitHistorico)
 
 
-##frontend, módulo caso
-Teniendo en cuenta la estructura de la App como se encuentra en el repositorio "frontend", a continuación se indica como debería ser la inclusión de los presentes archivos para el funcionammiento y visualización de la tabla de historico de solicitudes I T/ Calificación.
+## frontend, módulo caso
+Teniendo en cuenta la estructura de la App como se encuentra en el repositorio "frontend", a continuación se indica como debería ser la inclusión de los presentes archivos para el funcionammiento y visualización de la tabla de historico de solicitudes IT/Calificación.
 
 * En carpeta "components" del módulo caso:
     * Agregar la carpeta "tabla_solicitudes_calificacion":
@@ -37,4 +37,8 @@ Teniendo en cuenta la estructura de la App como se encuentra en el repositorio "
     
          `.service('sitHistoricoCalificacionService',SitHistoricoCalificacionService)`
          `.directive('tablaSolicitudesCalificacion',TablaSolicitudesCalificacionDirective)`
-        
+    
+## Configuración Microservicio sitHistorico
+* El servicio cuenta con la siguiente configuración de persistencia en la clase "DefaultDBI".
+    * Nombre JNDI= `jdbc/oracleSitHistorico`, el dataSource debe ser configurado en el archivo "server.xml" del servidor wlp. 
+
