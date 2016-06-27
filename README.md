@@ -19,8 +19,9 @@ Teniendo en cuenta la estructura de la App como se encuentra en el repositorio "
         * En el archivo rootCaso.html, agregar la directiva etiqueta `<tabla-solicitud-calificacion></tabla-solicitud-calificacion>`.
         * En el archivo "rootCaso.directive", agregar al $scope.on('UPDATE_TABLA_HISTORICO_CONCEPTOS'...
           el broadcast:
-          `$scope.broadcast("UPDATE_TABLA_SOLICITUDES_CALIFICACION_CHILD", identificacion);`
-         
+          ```
+          $scope.broadcast("UPDATE_TABLA_SOLICITUDES_CALIFICACION_CHILD", identificacion);
+          ```
 * En la carpeta "services" del módulo caso:
   Agregar el archivo "sitHistoricoCalificacion.service", el cuál contiene las llamadas al servicio.
   
