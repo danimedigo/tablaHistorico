@@ -26,10 +26,15 @@ Teniendo en cuenta la estructura de la App como se encuentra en el repositorio "
   
 * En el archivo "caso.module":
     * Importar la directiva "TablaSolicitudesCalificacionDirective":
+    
         `import { TablaSolicitudesCalificacionDirective } from './components/tabla_solicitudes_calificacion/tablaSolicitudesCalificacion.directive';`  
+        
     * Importar el servicio "SitHistoricoCalificacionService":
+    
         `import { SitHistoricoCalificacionService }  from  './services/sitHistoricoCalificacion.service';`
+        
     * Agregar el servicio y la directiva:
+    
          `.service('sitHistoricoCalificacionService',SitHistoricoCalificacionService)`
          `.directive('tablaSolicitudesCalificacion',TablaSolicitudesCalificacionDirective)`
         
