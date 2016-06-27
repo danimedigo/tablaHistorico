@@ -3,8 +3,8 @@ Tabla donde se visualizan las SIT del histórico IT/Calificación. Esta debe ser
 A contnuación se especifica la configuración contemplada para su inclución dentro del módulo caso.
 
 ## Tabla de contenido
-* [Configuración en frontend, módulo caso](#frontend, módulo caso)
-* [Configuración Microservicio](#Configuración Microservicio sitHistorico)
+* [Configuración en frontend, módulo caso](#frontend-módulo-caso)
+* [Configuración Microservicio](#configuración-microservicio-sithistorico)
 
 
 ## frontend, módulo caso
